@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+   
+}
+.sedans-section{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    width: 22rem;
+    height: 34rem;
+    border-radius: 10px 0px 0px 10px;
+}
+.sedans-section img{
+    width: 4rem;
+    margin-left: 53px;
+    margin-top: 55px;
+}
+h1{
+    text-transform: uppercase;
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 45px;
+    margin-left: 53px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    width: 13rem;
+    margin-left: 54px;
+    line-height: 30px;
+    word-spacing: 1px;
+}
+.btn{
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    outline: none;
+    border: none;
+    width: 10rem;
+    margin-left: 51px;
+    padding: 13px 12px 13px 16px;
+    border-radius: 25px;
+    margin-top: 45px;
+    font-size: 15px;
+    border: 2px solid white;
+}
+.btn:hover{
+    transition: 0.6s;
+    border: 2px solid white;
+    color: white;
+    background-color:  hsl(31, 77%, 52%);
+    font-size: 15px;
+}
+.suvs-bg{
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+}
+.luxury-bg{
+    background-color:  hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+.btn-2{
+    color: hsl(184, 100%, 22%);
+}
+.btn-2:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+    margin-top: 14px;
+}
+.btn-3:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+.attribution{
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 20px;
+}
+.attribution a:hover{
+    color: black;
+}
+
+@media (max-width:660px){
+    .grid-container{
+        display: block;
+    }
+    .sedans-section{
+        border-radius:10px 10px 0px 0px  ;
+    }
+    .suvs-bg{
+        border-radius: 0px;
+    }
+    .luxury-bg{
+        border-radius: 0px 0px 10px 10px ;
+        margin-bottom: 30px;
+    }
+}
